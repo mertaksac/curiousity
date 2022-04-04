@@ -1,6 +1,6 @@
 Hello, welcome to my sound project. Thank you for your time for looking at this.
 
-This project is something i tried to do when i was in university using matlab, but i never was able to get this working back then.
+This project is something i tried to do when i was in university using matlab, but i never was able to get it working back then.
 Now i would like to give it another go, this time using python.
 
 The project is in the field of TRANPORTATION - SMART CITIES. The goal is to be able to identify the state of traffic lights those are near pedestrian crossings
