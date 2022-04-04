@@ -10,7 +10,8 @@ and let the user know if they should WALK or WAIT.
 If the clicks are faster you should WALK, if they are slow you should WAIT.
 
 The goal of the program is to "listen" to the environment and detect BPM of this clicks and decide if WALK or WAIT.
-I have started on PC, not even using mic, just loading prerecorded wav files, and i am using Pycharm.
+
+I have started it on pycharm, my first goal would be an executable output that i can run on my PC.
 i have ideas to carry this on mobile, just to have the experience of it.
 
 I am thinking my project has to go following steps in development:
