@@ -1,0 +1,37 @@
+import matplotlib.pyplot as plt
+import wave, sys
+import numpy as np
+
+raw = wave.open('/100.wav')
+signal = raw.readframes(-1)
+signal = np.frombuffer(signal, dtype ="int16"
+                       )
+
+raw2 = wave.open('/180.wav')
+signal2 = raw2.readframes(-1)
+signal2 = np.frombuffer(signal2, dtype ="int16")
+
+# with np.printoptions(threshold=np.inf):
+#     print(signal)
+
+f_rate = raw.getframerate() * 2
+
+time = np.linspace(
+        0, # start
+        len(signal) / f_rate,
+        num = len(signal)
+    )
+
+fig = plt.figure()
+gs = fig.add_gridspec(2, hspace=0)
+axs = gs.subplots(sharex=True, sharey=True)
+fig.suptitle('bpm comparison')
+axs[0].plot(time, signal)
+axs[0].set_ylabel('100')
+axs[1].plot(time, signal2)
+axs[1].set_ylabel('180')
+
+for ax in axs:
+    ax.label_outer()
+
+plt.show()
